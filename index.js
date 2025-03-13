@@ -8,7 +8,7 @@ app.use(cors());
 dotenv.config();
 const PORT=process.env.PORT||8000;
 const llm=new ChatGroq({
-    apiKey:"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",
+    apiKey:process.env.OPENAI_KEY,
     temperature:1,
     model:"llama-3.3-70b-versatile",
 })
