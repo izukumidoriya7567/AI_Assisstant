@@ -120,6 +120,4 @@ app.get("/:input",async(req,res)=>{
     }
     
 });
-app.listen(PORT,()=>{
-    console.log(`The Server is Up and Running at PORT: ${PORT}`);
-})
+export default app;
